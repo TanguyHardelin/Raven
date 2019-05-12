@@ -1,10 +1,6 @@
 const fs     = require('fs');
 const params = JSON.parse(fs.readFileSync("./package.json"));
 
-
-
-
-
 /*
     Interfaces functions
 */
@@ -147,9 +143,9 @@ function find_and_create_plugins(){
 
             //On regarde si des parmetres sont deffinit
             let plugin_params={}
-            if(params.kernel[files[i]]){
+            if(params.plugins[files[i].split('.js')[0]]){
                 //Si oui on les rajoutes
-                plugin_params=params.plugins[files[i]]
+                plugin_params=params.plugins[files[i].split('.js')[0]]
             }
             let p=new plugin(plugin_params);
 

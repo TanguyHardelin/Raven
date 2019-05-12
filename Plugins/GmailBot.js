@@ -3,15 +3,19 @@ const Plugin= require('./Kernel/Plugin');
 class GmailBot extends Plugin{
     constructor(params){
         super(params);
+
+        this.bindAllFunction(this)
     }
     
     sendEmail(data,cb){
         let self=this;
+
         if(data.userEmail===undefined || data.text===undefined || data.subject===undefined){
             self.error("[sendEmail] need text,userEmail,subject");
             cb(false);
         }
         else{
+            
             var send = require('gmail-send')({
                 //var send = require('../index.js')({
                 user: this.params["login"],
@@ -32,6 +36,7 @@ class GmailBot extends Plugin{
     
             send({},function (err, res) {
                 if(err){
+                    console.log(err)
                     cb(false);
                 }
                 else{

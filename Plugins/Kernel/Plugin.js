@@ -125,6 +125,7 @@ class Plugin extends event{
         return this.prototype.getPrototype();
     }
     getPrototypeWithInfos(){
+        
         return this.prototype.getInfos();
     }
 

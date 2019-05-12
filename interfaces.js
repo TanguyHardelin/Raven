@@ -12,7 +12,7 @@ class FrontApps extends Plugin{
 class SQL_BDD extends Plugin{
 	constructor(){
 		super()
-		this.params = {"host":"localhost","user":"raven","password":"4VXQgAyhnB$","database":"raven"};
+		this.params = {"host":"localhost","user":"raven","password":"WaNJwNQR2eQwukbteE2AhWMk","database":"raven"};
 	}
 
 	userLogin(data,cb){}
@@ -79,9 +79,10 @@ class Empty extends Plugin{
 class GmailBot extends Plugin{
 	constructor(){
 		super()
-		this.params = {};
+		this.params = {"login":"ravenBot96@gmail.com","password":"Bba9e4d6991"};
 	}
 
+	sendEmail(data,cb){}
 }
 
 class Hackaton extends Plugin{
@@ -103,7 +104,7 @@ class RavenAdministrationPanel extends Plugin{
 class ResumeWebsite extends Plugin{
 	constructor(){
 		super()
-		this.params = {};
+		this.params = {"emailTanguy":"ta.hardelin@gmail.com"};
 	}
 
 }
