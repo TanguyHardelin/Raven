@@ -5,10 +5,10 @@ Raven est un projet prototype visant à uniformiser le back-end de toute les app
 # Installation et lancement:
 
 Installation:
-$ npm install
+    $ npm install
 
 Lancement:
-$ npm start
+    $ npm start
 
 
 # Ajouter une application:
