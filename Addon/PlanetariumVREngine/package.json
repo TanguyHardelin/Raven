@@ -1,0 +1,17 @@
+{
+    "name": "engine",
+    "version": "0.0.0",
+    "description": "My reusable C++ addon",
+    "gypfile": true,
+    "main": "./build/Release/engine",
+    "license": "MIT",
+    "dependencies": {
+        "nan": "^2.3.3",
+        "node-gyp": "^3.8.0"
+    },
+    "scripts": {
+        "build":"node-gyp build",
+        "configure":"node-gyp configure",
+        "clean":"node-gyp clean"
+    }
+}
